@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #dbe3fd;
+}
+.container {
+  width: 350px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+#card {
+  position: relative;
+  width: 100%;
+  padding: 30px 20px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+#card img {
+  display: block;
+  width: 180px;
+  max-height: 200px;
+  position: relative;
+  margin: 20px auto;
+}
+.hp {
+  width: 80px;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 30px;
+  margin-left: auto;
+  font-weight: 400;
+}
+.poke-name {
+  text-align: center;
+  font-weight: 600;
+}
+.types {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0 40px 0;
+}
+.hp span,
+.types span {
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  font-weight: 600;
+}
+.types span {
+  padding: 5px 20px;
+  border-radius: 20px;
+  color: #f8f8f8;
+}
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+.stats p {
+  color: #404060;
+}
+
+.btn {
+  display: block;
+  padding: 15px 60px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #fff8f8;
+  color: #000000;
+  position: relative;
+  margin: 30px auto;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn::before {
+	content: "";
+	position: absolute;
+	top: -2px;
+	left: -1px;
+	width: 100px;
+	height: 100px;
+	background: transparent;
+	border: 4px solid transparent;
+}
+
+.btn:hover::before {
+	animation: animate 1s linear forwards;
+}
+
+@keyframes animate {
+	0% {
+		width: 0;
+		height: 0;
+		border-top-color: #ff3737;
+		border-right-color: transparent;
+		border-bottom-color: transparent;
+		border-left-color: transparent;
+	}
+
+	50% {
+		width: 100%;
+		height: 0;
+		border-top-color: #d61010;
+		border-right-color: #a51a1a;
+		border-bottom-color: transparent;
+		border-left-color: transparent;
+	}
+
+	100% {
+		width: 100%;
+		height: 100%;
+		border-top-color: #e0ff56;
+		border-right-color: #e0f141;
+		border-bottom-color: transparent;
+		border-left-color: transparent;
+	}
+}
+
+.btn::after {
+	content: "";
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	width: 0;
+	height: 0;
+	background: transparent;
+	border: 4px solid transparent;
+}
+
+.btn:hover::after {
+	animation: animates 1s linear forwards;
+}
+
+@keyframes animates {
+	0% {
+		width: 0;
+		height: 0;
+		border-top-color: transparent;
+		border-right-color: transparent;
+		border-bottom-color: transparent;
+		border-left-color: #e0f141;
+	}
+
+	50% {
+		width: 0;
+		height: 100%;
+		border-top-color: transparent;
+		border-right-color: transparent;
+		border-bottom-color: #e0f141;
+		border-left-color: #a51a1a;
+	}
+
+	100% {
+		width: 100%;
+		height: 100%;
+		border-top-color: transparent;
+		border-right-color: transparent;
+		border-bottom-color: #ff3737;
+		border-left-color: #ff5b5b;
+	}
+}
+
+.loading{
+  width: 40px;
+  height: 30px;
+  display: none;
+  color: #d30404;
+}
