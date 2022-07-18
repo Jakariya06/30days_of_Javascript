@@ -1,0 +1,244 @@
+body{
+    background-color: #dad7d7;
+}
+
+main{
+    max-width: 375px;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: unset;
+}
+a:hover{
+    color: unset;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b3;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: none;
+}
+
+.bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    padding-top: 70px;
+    cursor: pointer;
+    display: none;
+}
+
+.list-menu{
+    display: none;
+}
+
+.bar-txt{
+    color: white;
+}
+
+.btn-sign{
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 5px 20px;
+    border: none;
+    color: black;
+    background-color: white;
+}
+
+header{
+    color: #707070;
+}
+
+.logo-txt{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.logo-txt span{
+    font-weight: 400;
+    color: #535050;
+}
+
+.nav{
+    cursor: pointer;
+}
+
+.home-title{
+    font-size: 28px;
+    color: #535050;
+}
+
+.home-desc{
+    font-size: 14px;
+    color: #707070;
+}
+
+.carousel{
+    border-radius: 12px;
+}
+
+.carousel-txt{
+ border-radius: 12px;
+ width: 100%;
+ height: 100%;
+ background-color: #0000008f;
+ position: absolute;
+ top: 0;
+ padding-left: 45px;
+}
+
+.carousel-txt h1{
+    font-size: 35px;
+}
+
+.carousel-txt h2{
+    font-size: 18px;
+}
+
+.carousel-txt .orange{
+    color: #fdbc42;
+}
+
+.wrap-search{
+    position: relative;
+    width: 167px;
+    height: 33px;
+    border-radius: 50px;
+    background-color: #fff;
+    box-shadow: 0 5px 20px #00000010;
+}
+
+.form-control{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.form-control::placeholder, .form-control[type="text"]{
+    font-size: 12px;
+}
+
+.form-control:focus{
+    box-shadow: none;
+}
+
+.i-search{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.wrap-icon{
+    width: 35px;
+    height: 33px;
+    border: none;
+    background-color: white;
+    box-shadow: 0 5px 10px #0e0c0c34;
+    border-radius:6px 6px 15px 6px;
+}
+
+.wrap-icon:hover{
+    background-color: #f6fdff;
+}
+
+#toggle2{
+    cursor: pointer;
+}
+
+.title-swift{
+    font-size: 15px;
+    color: #888;
+}
+
+.card-wp{
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.card-wp::-webkit-scrollbar{
+    display: none;
+}
+
+.card{
+    min-width: 150px;
+    padding: 8px;
+    border: none;
+    box-shadow: 0px 5px 20px #00000010;
+}
+
+.card-body h5{
+    font-size: 18px;
+}
+
+.card-body p{
+    font-size: 12px;
+}
+
+.shop-icon{
+    position: absolute;
+    right: -3px;
+    bottom: -2px;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 20px #00000010;
+    background-color: #ffab24;
+    color: white;
+}
+
+.overlay-cart{
+    position: fixed;
+    width: 375px;
+    height: 100vh;
+    background-color: #000000a1;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    display: none;
+}
+
+.swift-bar{
+    height: 70%;
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    bottom: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px;
+}
+
+.swift-bar h2{
+    font-size: 18px;
+    color: #888;
+}
+
+.swift-bar h1{
+    font-size: 19px;
+}
+
+.swift-bar h3{
+    font-size: 16px;
+    color: #888;
+}
+
+.btn{
+    background-color: orange;
+    padding: 10px;
+}
